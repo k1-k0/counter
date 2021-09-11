@@ -9,6 +9,8 @@ python = "^3.9"
 aiohttp = "^3.7.4"
 cchardet = "^2.1.7"
 aiodns = "^3.0.0"
+pytest = "^6.2.5"
+pytest-aiohttp = "^0.3.0"
 
 [tool.poetry.dev-dependencies]
 
