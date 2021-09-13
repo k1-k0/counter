@@ -22,9 +22,7 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install dependencies
         run: poetry install 
-      - name: Activate environment
-        run: poetry shell
       - name: Move to app dir and export env
         run: cd src/ && export PYTHONPATH=:.
       - name: Run tests
-        run: pytest .
+        run: poetry run pytest .
