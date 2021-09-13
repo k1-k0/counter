@@ -5,3 +5,6 @@ __pycache__/
 
 # Pytest cache folder
 .pytest_cache/
+
+# personal
+ideas.md
