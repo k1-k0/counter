@@ -8,7 +8,7 @@ basic_routes = web.RouteTableDef()
 
 @basic_routes.get('/')
 async def base_handle(request):
-    return web.FileResponse('./static/index.html')
+    return web.FileResponse('/home/k1k0/Code/Python/counter/static/index.html')
 
 @basic_routes.get('/increment')
 async def increment_handle(request):

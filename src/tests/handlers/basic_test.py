@@ -1,7 +1,7 @@
 import asyncio
 import pytest
 from main import make_app
-from basic_handlers import websockets
+from handlers.basic import websockets
 
 
 @pytest.fixture

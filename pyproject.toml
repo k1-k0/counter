@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "clicker"
+name = "counter"
 version = "0.1.0"
-description = "Just clicker with async technology on backend side"
+description = "Just counter with async technology on backend side"
 authors = ["k1-k0 <kmssrvk@gmail.com>"]
 
 [tool.poetry.dependencies]
