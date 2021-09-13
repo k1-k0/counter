@@ -26,5 +26,5 @@ jobs:
         run: poetry run pytest .
         env:
           PYTHONPATH: :.
-          STATIC_PATH: ./static
+          STATIC_PATH: ../static
         working-directory: ./src
