@@ -1,5 +1,6 @@
 import aiohttp
 from aiohttp import web
+from config import STATIC_FOLDER_PATH
 
 counter = 0 
 websockets = []
@@ -8,7 +9,7 @@ basic_routes = web.RouteTableDef()
 
 @basic_routes.get('/')
 async def base_handle(request):
-    return web.FileResponse('/home/k1k0/Code/Python/counter/static/index.html')
+    return web.FileResponse(f'{STATIC_FOLDER_PATH}/index.html')
 
 @basic_routes.get('/increment')
 async def increment_handle(request):

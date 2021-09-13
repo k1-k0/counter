@@ -23,4 +23,8 @@ jobs:
       - name: Install dependencies
         run: poetry install 
       - name: Run tests
-        run: cd src/ && export PYTHONPATH=:. && poetry run pytest .
+        run: poetry run pytest .
+        env:
+          PYTHONPATH: :.
+          STATIC_PATH: ./static
+        working-directory: ./src
